@@ -1,0 +1,23 @@
+{
+  "name": "Release-it-Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maaviles2000/Release-it-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maaviles2000/Release-it-Test/issues"
+  },
+  "homepage": "https://github.com/maaviles2000/Release-it-Test#readme",
+  "dependencies": {
+    "release-it": "^15.0.0"
+  }
+}

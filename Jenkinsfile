@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages{
-        stage('Branch name') {
+        stage('DEVELOP') {
             when {
                 expression {
                     return CHANGE_TARGET == 'develop';
@@ -11,7 +11,7 @@ pipeline {
                 echo "DEVELOP :)"
             }
         }
-        stage('Branch name') {
+        stage('MAIN') {
             when {
                 expression {
                     return CHANGE_TARGET == 'main';

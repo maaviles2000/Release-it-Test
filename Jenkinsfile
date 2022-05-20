@@ -1,10 +1,11 @@
+def targetBranch = ghprbTargetBranch;
 pipeline {
     agent any
     stages{
         stage('DEVELOP') {
             when {
                 expression {
-                    return CHANGE_TARGET == 'develop';
+                    return targetBranch == 'develop';
                 }
             }
             steps {
@@ -14,7 +15,7 @@ pipeline {
         stage('MAIN') {
             when {
                 expression {
-                    return CHANGE_TARGET == 'main';
+                    return targetBranch == 'main';
                 }
             }
             steps {

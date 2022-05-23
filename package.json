@@ -19,5 +19,13 @@
   "homepage": "https://github.com/maaviles2000/Release-it-Test#readme",
   "dependencies": {
     "release-it": "^15.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

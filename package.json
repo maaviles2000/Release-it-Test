@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"test\"",
+    "commit": "cz",
+    "prepare": "husky install",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prettier:check": "prettier --check ",
+    "prettier:write": "prettier --write",
+    "prepush": "npm run test",
+    "prebuild": "rimraf dist",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,7 +29,12 @@
     "release-it": "^15.0.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0"
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "prettier": "2.6.2"
   },
   "config": {
     "commitizen": {

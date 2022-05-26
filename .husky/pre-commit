@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+npx lint-staged -c .lintstagedrc
+npm test
+
+# exec < /dev/tty && npx cz --hook || true
+# Linux
+# exec < /dev/console && npx cz --hook || true
+#Windows

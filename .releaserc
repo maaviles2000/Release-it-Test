@@ -1,0 +1,15 @@
+{
+  "branches": ["master", "next", "feature/auto_version"],
+  "repositoryUrl": "git@github.com:maaviles2000/Release-it-Test.git",
+  "tagFormat": "v${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    {
+      "changelogFile": "CHANGELOG.md"
+    }
+  ],
+  "dryRun": false,
+  "ci": true
+}
